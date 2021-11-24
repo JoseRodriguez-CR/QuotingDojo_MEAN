@@ -1,0 +1,14 @@
+# OS generated files #
+######################
+Pipfile.lock
+Pipfile
+
+# Spring Boot files #
+######################
+.metadata
+
+
+# Express files #
+######################
+package-lock.json
+node_modules

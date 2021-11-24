@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
+    <title>Quoting Dojo</title>
+</head>
+<body>
+    <div class ="container">
+        <h1 class ="title">Welcome to Quoting Dojo</h1>
+        <form action="/quotes" method="post">
+            <h4>Your Name: <input class="right fields" type="text" name="name"></h4>
+            <h4>Your Quote: <input class="right fields" type="text" name="quote"></h4>
+            <div >
+                <% if(messages.quoteError) { %>
+                    <% for (let error of messages.quoteError) { %>
+                        <p class ="error"><%= error %> </p>
+                    <% } %>
+                <% } %>
+            </div>
+            <input class="btn1" type="submit" value="Add My Quote!">
+
+        </form>
+
+        <a href="/quotes"><button class="btn2 right">Skip To Quotes!</button></a>
+        
+    </div>
+</body>
+</html>
